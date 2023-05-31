@@ -1,12 +1,12 @@
 [package]
-name = "seven-seas"
+name = "tiny-adventure"
 version = "0.1.0"
-description = "Created with Anchor"
+description = "Tiny Adventure"
 edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "lib"]
-name = "seven_seas"
+name = "tiny_adventure"
 
 [features]
 no-entrypoint = []
@@ -17,7 +17,3 @@ default = []
 
 [dependencies]
 anchor-lang = { version = "0.27.0", features = ["init-if-needed"] }
-anchor-spl = { version = "0.27.0", features = ["metadata"] }
-mpl-token-metadata = "=1.11.2"
-bytemuck = { version = "1.4.0", features = ["derive", "min_const_generics"]}
-clockwork-sdk = { version = "~2.0.17" }
