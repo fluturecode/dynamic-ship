@@ -9,7 +9,7 @@ pub mod tiny_adventure {
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
         ctx.accounts.new_game_data_account.player_position_x = 0;
         msg!("A Journey Begins!");
-        msg!("o.......");
+        msg!("..\0/..");
         Ok(())
     }
 
