@@ -1,12 +1,12 @@
 [package]
-name = "dynamic-ship"
+name = "seven-seas"
 version = "0.1.0"
 description = "Created with Anchor"
 edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "lib"]
-name = "dynamic_ship"
+name = "seven_seas"
 
 [features]
 no-entrypoint = []
@@ -16,4 +16,8 @@ cpi = ["no-entrypoint"]
 default = []
 
 [dependencies]
-anchor-lang = "0.24.2"
+anchor-lang = { version = "0.27.0", features = ["init-if-needed"] }
+anchor-spl = { version = "0.27.0", features = ["metadata"] }
+mpl-token-metadata = "=1.11.2"
+bytemuck = { version = "1.4.0", features = ["derive", "min_const_generics"]}
+clockwork-sdk = { version = "~2.0.17" }
