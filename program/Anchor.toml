@@ -1,7 +1,7 @@
 [features]
 seeds = false
 [programs.localnet]
-dynamic_ship = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+dynamic_ship = "5zZ2kGW8eur13REqFXQK2tYch54a5K3rpR372mFG7woc"
 
 [registry]
 url = "https://anchor.projectserum.com"
